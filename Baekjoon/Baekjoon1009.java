@@ -26,7 +26,7 @@ public class Baekjoon1009 {
 		while(cnt < n) { // 카운트 변수 cnt가 n보다 작을 경우 반복문 실행
 			a = scan.nextInt(); // 입력값 a
 			b = scan.nextInt(); // 입력값 b
-			r = 1; // 한번의 테스트 케이스 연산을 끝마칠 때마다 나머지값 초기화
+			result = 1; // 한번의 테스트 케이스 연산을 끝마칠 때마다 나머지값 초기화
 			for(int i = 0; i < b; i++) { // a를 b만큼 제곱 해주기 위한 반복문
 				// 결과값 = (결과값 * 지수) % 10
 				result = (result * a) % 10;
