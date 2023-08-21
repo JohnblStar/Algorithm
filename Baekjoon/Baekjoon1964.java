@@ -18,10 +18,10 @@ public class Baekjoon1964 {
 		// 알고리즘
 		
 		for(int i = 1; i < n; i++) { 
-			// 결과값 = (초기값 + (각 단계 + 증가한 겹치지 않는 점) * 변의 개수 - 겹치는 점의 개수)
-		    result = (result + (i + 2) * 3 - 2);
+			// 결과값 = (초기값 + (각 단계 + 증가한 겹치지 않는 점) * 변의 개수 - 겹치는 점의 개수) % 문제 조건에 맞도록 값 계산
+		    result = (result + (i + 2) * 3 - 2) % 45678;
 	    }
 	    
-	    System.out.println(result % 45678); // 문제 조건에 맞는 계산 후 결과 출력
+	    System.out.println(result); //결과 출력
 	}
 }
