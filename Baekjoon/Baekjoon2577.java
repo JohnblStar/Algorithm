@@ -20,9 +20,6 @@ public class Baekjoon2577 {
 		// 정수형태의 계산 내용을 문자열로 변경
 		String result = Integer.toString(inputNum1 * inputNum2 * inputNum3);
 		
-		//입력값 출력
-		System.out.println(result);
-		
 		//알고리즘
 		for(int i = 0; i < 10; i++) { // 숫자 0부터 9까지를 한번씩 비교하기 위한 반복문
 			int count = 0; // 카운트
