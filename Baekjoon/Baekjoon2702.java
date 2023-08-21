@@ -28,7 +28,7 @@ public class Baekjoon2702 {
 		
 		int n = scan.nextInt(); // 테스트 케이스의 수를 위한 입력값 선언
 		
-		for(int i = 0; i < n-1; i++) {
+		for(int i = 0; i < n; i++) {
 			int a = scan.nextInt();
 			int b = scan.nextInt();
 			System.out.print(a * b / math(a, b)); // 최대 공약수를 구하기 위해 입력값 a와 b를 곱한 후 최소 공배수를 구하는 math 메소드 호출
