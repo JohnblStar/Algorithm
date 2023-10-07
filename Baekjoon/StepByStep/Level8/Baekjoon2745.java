@@ -29,7 +29,7 @@ public class Main {
                 result += val;
             }
         }
-        bw.write(String.valueOf(result));
+        bw.write(String.valueOf(val));
         bw.close();
     }
 }
