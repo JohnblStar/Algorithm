@@ -24,6 +24,7 @@ public class Main {
             }
             bw.newLine();
         }
+        bw.flush();
         bw.close();
     }
 }
