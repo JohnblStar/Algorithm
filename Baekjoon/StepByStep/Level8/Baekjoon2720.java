@@ -12,17 +12,20 @@ public class Main {
         for(int i = 0; i < T; i++) {
             int C = Integer.valueOf(br.readLine());
             for(int j = 0; j < 4; j++) {
-                if(C % arr[j] > 0) {
-                    C %= arr[j];
-                    resultArr[i] += 1;
-                } else {
-                    resultArr[i] = 0;
+                while(true) {
+                    if(C >= arr[j]){
+                        C -= arr[j];
+                        resultArr[j] += 1;
+                    } else {
+                        break;
+                    }
                 }
             }
-        }
-        
-        for(int i = 0; i < 4; i++) {
-            bw.write(String.valueOf(resultArr[i] + " "));
+            for(int k = 0; k < 4; k++) {
+                bw.write(String.valueOf(resultArr[k] + " "));
+                resultArr[k] = 0;
+            }
+            bw.newLine();
         }
         bw.close();
     }
