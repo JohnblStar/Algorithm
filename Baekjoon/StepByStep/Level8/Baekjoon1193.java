@@ -6,19 +6,13 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
         int N = Integer.valueOf(br.readLine());
-        int num = 4;
-        int a = 1;
-        int b = 1;
-        
-        for(int i = 0; i < N; i++){
-             if(b % 2 == 1 && a % 2 == 1){
-                a 
-            } else {
-                b += 1;
-            }
+        int i = 1;
+        while(i < N){
+            N -= i;
+            i++;
         }
         
-        bw.write(String.valueOf(a + "/" + b));
+        bw.write(String.valueOf(i));
         bw.close();
     }
 }
