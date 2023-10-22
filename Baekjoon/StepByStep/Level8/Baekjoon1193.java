@@ -7,12 +7,23 @@ public class Main {
         
         int N = Integer.valueOf(br.readLine());
         int i = 1;
-        while(i < N){
-            N -= i;
+        int cnt = 1;
+        int x = 0;
+        int y = 0;
+        
+        while(cnt < N){
+            N -= cnt++;
             i++;
         }
         
-        bw.write(String.valueOf(i));
+        if(i%2==0) {
+         x = i - N;
+         y = N - 1;
+        } else {
+         x = N - 1;
+         y = i - N;
+        }
+        bw.write(String.valueOf((y + 1) + "/" + (x + 1)));
         bw.close();
     }
 }
