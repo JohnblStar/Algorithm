@@ -11,13 +11,7 @@ public class Main {
         int B = Integer.valueOf(strtk.nextToken());
         int V = Integer.valueOf(strtk.nextToken());
         
-        int snale = 0;
-        int day = 1;
         
-        while((snale += A) < V) {
-            snale -= B;
-            day++;
-        }
         bw.write(String.valueOf(day));
         bw.close();
     }
