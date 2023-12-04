@@ -9,6 +9,8 @@ public class Main {
     
         int a = 0;
         int b = 0;
+        int result = 0;
+        String str = "";
         
         while(true){
             a = Integer.valueOf(strtk.nextToken());
@@ -16,7 +18,11 @@ public class Main {
             if(a == 0 && b == 0){
                 break;
             } else {
-                
+                if(a > b){
+                    result = a/b;
+                } else {
+                    
+                }
             }
         }
     }
